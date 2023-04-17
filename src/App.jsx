@@ -7,7 +7,8 @@ function App() {
   const[formData, setFormData] = React.useState(
     {
       firstName: '',
-      lastName: ''
+      lastName: '',
+      comments: ''
     })
 
   function handleChange (event) {
@@ -40,8 +41,11 @@ function App() {
         name="lastName"
         />
         <textarea 
-        name="" 
+        type='text'
+        name="comments" 
+        value={formData.comments}
         placeholder='comments'
+        onChange={handleChange}
         />
      </form>
     </div>
