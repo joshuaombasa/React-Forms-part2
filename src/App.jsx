@@ -47,7 +47,10 @@ function App() {
         placeholder='comments'
         onChange={handleChange}
         />
-        <input type="checkbox" />
+        <label>
+        <input 
+        type="checkbox" 
+        />Check if you've graduated.</label>
      </form>
     </div>
   )
