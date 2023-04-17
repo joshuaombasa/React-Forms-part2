@@ -14,12 +14,13 @@ function App() {
     setFormData(prevFormData => {
       return {
         ...prevFormData,
+        [event.target.name]: event.target.value
 
       }
     })
-
-    console.log(formData)
   }
+
+  console.log(formData)
 
   return (
     <div className="App">
@@ -37,6 +38,10 @@ function App() {
         onChange={handleChange}
         value={formData.lastName}
         name="lastName"
+        />
+        <textarea 
+        name="" 
+        placeholder='comments'
         />
      </form>
     </div>
