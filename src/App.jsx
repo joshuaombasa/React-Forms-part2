@@ -47,6 +47,7 @@ function App() {
         placeholder='comments'
         onChange={handleChange}
         />
+        <input type="checkbox" />
      </form>
     </div>
   )
