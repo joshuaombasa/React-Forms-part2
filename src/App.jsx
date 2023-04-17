@@ -14,9 +14,10 @@ function App() {
 
   function handleChange (event) {
     setFormData(prevFormData => {
+      const {name, value, checked} = event.target
       return {
         ...prevFormData,
-        [event.target.name]: event.target.value
+        [name]: value
 
       }
     })
