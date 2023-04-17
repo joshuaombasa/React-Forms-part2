@@ -6,9 +6,19 @@ form {
   border: 1px solid rgb(80, 78, 78);
 }
 
-form input[type='text'] {
+form input[type='text'], form textarea {
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
   border: 0.5px solid rgb(80, 78, 78);
+}
+
+.isGraduated {
+  align-self: flex-start;
+  margin: 10px;
+}
+
+form input[type='checkbox'] {
+   align-self: flex-start;
+   margin: 10px;
 }
