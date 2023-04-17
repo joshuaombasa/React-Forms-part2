@@ -8,7 +8,8 @@ function App() {
     {
       firstName: '',
       lastName: '',
-      comments: ''
+      comments: '',
+      isGraduated: ''
     })
 
   function handleChange (event) {
@@ -47,9 +48,12 @@ function App() {
         placeholder='comments'
         onChange={handleChange}
         />
-        <label>
+        <label className='isGraduated'>
         <input 
         type="checkbox" 
+        name='isGraduated'
+        onChange={handleChange}
+        checked={formData.isGraduated}
         />Check if you've graduated.</label>
      </form>
     </div>
